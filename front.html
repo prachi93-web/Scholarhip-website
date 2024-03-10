@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholar-Connect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>h1{text-align: center ; }"</style>
+  <style>p{text-align: center ; }"</style>
+  <style>font{text-align: center ; }"</style>
+  <style>section{text-align: center ; }"</style>
+  <style>
+
+</style>
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 00;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('pencil.jpg');
+      height: 100%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+    }
+
+    header {
+  background-color: #000;
+  padding: 0;
+  border: 0;
+  color: #000;
+}
+
+.heading-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+    }
+
+    .heading {
+      font-size: 48px;
+      text-align: center;
+      position: relative;
+      color: #fff;
+      font-style: italic;
+      overflow: hidden;
+    }
+
+    .heading span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: animateText 1.5s ease-in-out forwards;
+    }
+
+    @keyframes animateText {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 0;
+}
+
+.logo, .website-name {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ccc;
+  padding: 0;
+}
+
+.logo {
+  background: none
+  /* border-radius:; */
+}
+
+.website-name {
+  margin-left: 0;
+}
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      
+
+      /* font-family: Arial, sans-serif; */
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #222;
+      padding: 10px;
+      font-style: italic;
+
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0px 10px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0px 30px;
+    }
+    
+
+    /* Hero Section Styles */
+    .hero {
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-decoration-color: #000000;
+    }
+
+    .hero p {
+      font-size: 24px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Main Content Styles */
+    .content {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      margin-bottom: 20px;
+      text-align: left;
+      text-align: justify;
+      margin: 10px;
+      font-size: 20px;
+      /* vertical-align: baseline; */
+    }
+/*CSS for form*/
+    .container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#mySelect {
+  width: 200px; /* Adjust the width as per your requirement */
+  height: 40px; /* Adjust the height as per your requirement */
+  font-size: 16px; /* Adjust the font size as per your requirement */
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-decoration-color:#ff6696;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #20acc8;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  text max-width: 20px;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+/* feedback review section start*/
+.feedback-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+.feedback-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.feedback-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feedback h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+.feedback p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000;
+  text-align: justify;
+  text-align: left;
+  margin: 0px;
+}
+
+/* feedback review section end*/
+
+</style>
+  
+
+  <nav>
+    <ul>
+      <li><a href="file:///C:/Users/mehet/OneDrive/Desktop/cpp%20program/front.html">Home</a></li>
+      <li><a href="#">Scholarships</a></li>
+      <li><a href="#">Apply</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    </ul>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <header>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="logoking.png" style="width: 100px; height: 100px;">
+      </div>
+      <div class="heading-container">
+        <h1 class="heading">
+          <font face="ariel"><span>Scholar-Connect</span></font>
+        </h1>
+      </div>
+    
+      <script>
+        // Delay and animate each span element sequentially
+        const spans = document.querySelectorAll('.heading span');
+        spans.forEach((span, index) => {
+          span.style.animationDelay = `${index * 0.2}s`;
+        });
+      </script>
+  </header>
+  
+   
+  <section class="hero">
+    <div class="hero-content">
+      <font face="ariel"><h2>Welcome to Our SCHOLAR-CONNECT</h2></font>
+      <font face="ariel"><p>Unlock Your Potential with Our Scholarships</p></font>
+      <br>
+      <p>Are you looking to make your mark in the world of academia? Scholar-Connect is the perfect place to start!
+         With our comprehensive range of scholarships and resources, you'll be well on your way to achieving your academic goals.
+          Join us today and start connecting with a brighter future
+          Scholar-Connect is your one-stop resource for college scholarships! With our easy-to-use search engine and extensive database 
+          of awards, you can find the perfect scholarship for your educational goals. 
+          Start connecting with your future today</p>
+    </div>
+  </section>
+  <font face="ariel" color="black" size="35%"><h4>Choose your Qualification:</h4></font>   
+    <br>
+    <!-- <br>  -->
+  <p class="opt" box aria-setsize="90">
+  
+    <select id="mySelect" onchange="if (this.value) window.location.href=this.value; " innerWidth="100%">
+      <option value= "" ><b>Please select an entity</b></option>
+      <option value="file:///C:/Users/mehet/OneDrive/Desktop/cpp%20program/ugnew.html">UNDERGRADUATE</option>
+      <option value="file:///C:/Users/mehet/OneDrive/Desktop/cpp%20program/pgnew.html">POSTGRADUATE</option>
+    </select>
+    </p>
+  <br>
+  <div class="content">
+    <font face="ariel"><h3>About Us</h3></font>
+    <p>This website will help you to find the private as well as government scholarship schemes which will be applicable to you.It will provide scholarship names,application period and pdf which will contain whole information about the particular scholarship.This website will be heplful for not only one particular field but also more 20 fields are included in our website.Scholar-Connect is the go-to source for students looking to find and apply for scholarships. We provide a comprehensive list of scholarships, along with helpful tips and advice for funding your education. Our team of experts is always available to answer any questions you may have and guide you through the application process. We strive to make the scholarship process easier and more accessible for everyone. Our mission is to provide the resources and support needed to make achieving your educational goals a reality.
+      </p>
+   </div>
+
+    <div class="content">
+      <font face="ariel" ><h3>Contact Us</h3></font>
+      <p>If you have any questions or concerns regarding our scholarship program, please contact us. Our customer
+         service team is available to help you 24 hours a day, 7 days a week. You can reach us by calling 1-800-555-1234 
+         or by emailing info@scholarship.com. We look forward to hearing from you</p>
+        
+      </div>
+
+<section>
+  <div class="container">
+    <h3>Feedback</h3>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Enter Email ID:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="field">Enter Field:</label>
+        <input type="text" id="field" name="field" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn"><a href="file:///C:/Users/mehet/OneDrive/Desktop/cpp%20program/submit.html">Submit</a></button>
+      <!-- <button class="btn" onclick="window.location.href = 'C:/Users/mehet/OneDrive/Desktop/cpp%20program/submit.html';">Submit</button> -->
+
+    </form>
+  </div>
+</section>
+<!-- feedback review section start -->
+<div class="feedback-section">
+  <div class="feedback">
+    <div class="feedback-img">
+      <img src="https://www.bing.com/th?id=OIP.4nAnWLkqBOgW8y6iFrmyTgEgDY&w=142&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="User 1">
+    </div>
+    <h3>User 1</h3>
+    <p>"Words cannot adequately express the profound impact your website has had on my life. Through your platform, I was awarded a scholarship that has transformed my educational journey. The financial support I received has opened doors and allowed me to pursue my dreams without the weight of financial constraints. I am forever grateful for the opportunities your website has provided me, and I will carry the lessons and experiences gained through this scholarship with me throughout my life. Thank you for making a difference and being a catalyst for positive change in my education."</p>
+  </div>
+  <div class="feedback">
+    <div class="feedback-img">
+      <img src="https://www.bing.com/th?id=OIP.JsaIYLZO6rf_aV0bWBMl6wHaHa&w=91&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="User 1">
+    </div>
+    <h3>User 2</h3>
+    <p>"Thanks to your website, I was awarded a scholarship that has made a tremendous difference in my life. I cannot express enough gratitude for the opportunity it has provided me. The financial assistance has lifted a significant burden and enabled me to focus on my studies with renewed dedication and enthusiasm. Your platform has truly been a game-changer for me, and I am forever thankful for the impact it has had on my education and future prospects."</p>
+  </div>
+  <div class="feedback">
+    <div class="feedback-img">
+      <img src="https://th.bing.com/th/id/R.74cc60a27d1f826edc01a62e55a8d312?rik=F0ANipCclrbT%2fA&riu=http%3a%2f%2fwww.piranhaphotography.com%2fblog%2fwp-content%2fuploads%2f2011%2f04%2fstudent_photograph_london1.jpg&ehk=V9F5ch8o5dNR0TbWKeUpyE0AnPWG6mg%2bqxf2f2DxMpQ%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="User 2">
+    </div>
+    <h3>User 3</h3>
+    <p>"I am incredibly grateful for the scholarship I received through your website. It has been a life-changing opportunity for me. Without your platform, I wouldn't have known about this scholarship or had the chance to apply. This support has relieved a significant financial burden and allowed me to pursue my dreams without worry. Thank you for creating such a valuable resource that has made a positive impact on my education and future."</p>
+  </div>
+  <!-- Add more feedback divisions as needed -->
+</div>
+<!-- feedback review section end -->
+</head>
+</html>
